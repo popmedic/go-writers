@@ -42,5 +42,5 @@ func (w *LineWriter) Write(p []byte) (n int, err error) {
 }
 
 func (w *LineWriter) Max() int {
-	return w.Max
+	return w.MaxSlice.GetMax()
 }
