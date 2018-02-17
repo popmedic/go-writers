@@ -40,3 +40,7 @@ func (w *LineWriter) Write(p []byte) (n int, err error) {
 	w.buffer = buf
 	return n, nil
 }
+
+func (w *LineWriter) Max() int {
+	return w.Max
+}
